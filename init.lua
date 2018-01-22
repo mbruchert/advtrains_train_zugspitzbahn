@@ -16,14 +16,12 @@ advtrains.register_wagon("engine_zugspitzbahn", {
 			name=S("Driver Stand (front)"),
             attach_offset={x=o, y=6, z=8},
 			view_offset={x=0, y=-3, z=0},
-			driving_ctrl_access=true,
 			group = "dstand",
 		},
 		{
 			name=S("Driver Stand (back)"),
 			  attach_offset={x=o, y=-6, z=8},
 			view_offset={x=0, y=-3, z=0},
-			driving_ctrl_access=true,
 			group = "dstand",
 		},
 	},
@@ -31,6 +29,7 @@ advtrains.register_wagon("engine_zugspitzbahn", {
 		dstand={
 			name = "Driver Stand",
 			access_to = {},
+			driving_ctrl_access=true,
 		},
 	},
     assign_to_seat_group = {"dstand"},
